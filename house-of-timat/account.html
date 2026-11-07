@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login / Sign up | HOUSE OF TIMAT</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="account"><main>
+<section class="wrap"><div id="auth" class="authbox"><h1 class="h">Welcome</h1>
+<div class="tabs"><button class="pill on" data-act="tab" data-t="login">Log in</button><button class="pill" data-act="tab" data-t="signup">Sign up</button></div>
+<form class="f" id="lf" data-auth="login" novalidate><label class="l">Email<input type="email" name="email" required autocomplete="email"></label><label class="l">Password<input type="password" name="password" required autocomplete="current-password"></label><button class="btn">Log in</button></form>
+<form class="f" id="sf" data-auth="signup" hidden novalidate><label class="l">Full name<input name="name" required autocomplete="name"></label><label class="l">Email<input type="email" name="email" required autocomplete="email"></label><label class="l">Password (8+ characters)<input type="password" name="password" required autocomplete="new-password"></label><label class="l">Confirm password<input type="password" name="confirm" required autocomplete="new-password"></label><button class="btn">Create account</button></form>
+<p class="note">Demo accounts: details are kept in this browser only and are not shared with a server. Connect Firebase Auth or Supabase for real accounts that work across devices.</p></div>
+<div id="acct" class="authbox" hidden><h1 class="h">Your account</h1><p id="who" style="text-align:center;margin-bottom:1.5rem"></p><div class="row" style="justify-content:center"><a class="btn" href="shop.html">Continue shopping</a><a class="btn ghost" href="wishlist.html">My wishlist</a><button class="btn ghost" data-act="logout">Log out</button></div></div></section>
+</main><script src="js/config.js"></script><script src="js/data.js"></script><script src="js/app.js"></script></body></html>
